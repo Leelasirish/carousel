@@ -1,0 +1,101 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: inline-block;
+}
+.item {
+	display: inline-block;
+	overflow: hidden;
+    white-space: nowrap;
+    color: black;
+    vertical-align: top;
+    font-size: 14px;
+}
+.item-data img{
+	display: inline-block;
+	height: 100%;
+}
+.carousel{
+	width: 600px;
+	margin: 0px auto;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+}
+.carousel-content{
+	position: relative;
+	xwidth: 100%;
+	height: 352px;
+	left: 0px;
+	overflow: hidden;
+	transition-property: left;
+	transition-duration: 0.5s;
+	transition-delay: 0s;
+	xtransition-timing-function: cubic-bezier(0, 0, 1, 1);
+	font-size: 0px;
+}
+.carousel-layer{
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 19px);
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: transparent;
+	z-index: 1;
+}
+.carousel-ul{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+.carousel-li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin: 0px 4px;
+}
+.previous, .next{
+	position: absolute;
+	top: 150px;
+	color: #00f;
+	padding: 20px;
+	z-index: 1;
+	cursor: pointer;
+}
+.previous{
+	left: 0px;
+}
+.next{
+	right: 0px;
+}
+.hide{
+	display: none;
+}
+.item-data{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.item .img-label{
+    position: absolute;
+    bottom: 70px;
+    color: #fff;
+    width: 600px;
+    text-align: center;
+}
+.active{
+	background-color: blue;
+}
